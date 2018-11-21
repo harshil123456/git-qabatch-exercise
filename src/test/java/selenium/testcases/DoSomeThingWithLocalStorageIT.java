@@ -16,6 +16,13 @@ import selenium.utils.annotations.browser.Browser;
 import selenium.utils.browser.LocalStorage;
 
 /** session storage works exactly the same **/
+
+/** session storage works exactly the same **/
+
+/** session storage works exactly the same **/
+
+/** session storage works exactly the same **/
+
 @Browser(skip = PHANTOMJS)
 public class DoSomeThingWithLocalStorageIT extends SeleniumTestWrapper {
 
