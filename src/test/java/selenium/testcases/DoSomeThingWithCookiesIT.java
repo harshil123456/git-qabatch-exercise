@@ -63,4 +63,17 @@ public class DoSomeThingWithCookiesIT extends SeleniumTestWrapper {
         // check if number of localStorage is 0
         assertThat(cookies.getAllCookies().size(), is(0));
     }
+    @Test1
+    public void deleteAllCookies() {
+
+        // check if number of localStorage is greater than 0
+        assertThat(cookies.getAllCookies().size(), greaterThan(0));
+
+        // delete all localStorage
+        cookies.deleteAllCookies();
+
+        // check if number of localStorage is 0
+        assertThat(cookies.getAllCookies().size(), is(0));
+    }
+
 }
